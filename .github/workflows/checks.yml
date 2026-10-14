@@ -3,8 +3,8 @@
 # `.github/crew/run_checks.py` runs the setup and checks the design in
 # `.crew/project.yaml` names, in the design's image, as the crew's sandbox does.
 # So CI always matches the design and no story writes it (mqucifer/crew ADR 0030).
-# Branch protection requires this job, `checks`, from the repository's creation:
-# before the design is merged it has nothing to check and passes.
+# Before the design is merged it has nothing to check and passes. Once the
+# skeleton has made it green, branch protection requires this job, `checks`.
 
 name: checks
 
